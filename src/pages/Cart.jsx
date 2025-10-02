@@ -160,6 +160,7 @@ export default function Cart({ user }) {
                                         </span>
                                     </div>
                                 </div>
+                                
 
                                 <button className="w-full bg-primary-500 text-white py-3 rounded-full font-bold hover:bg-primary-600 transition-colors mb-3 hover:bg-primary-300 cursor-pointer" 
                                     onClick={() => {
