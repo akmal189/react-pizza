@@ -4,6 +4,11 @@ import Home from './pages/Home';
 import NotFound from './pages/404';
 import Cart from './pages/Cart';
 import UserOrders from './pages/UserOrders';
+import Dashboard from './pages/Dashboard';
+import AdminCategories from './pages/AdminCategories';
+import AdminProducts from './pages/AdminProducts';
+import AdminOrders from './pages/AdminOrders';
+import AdminUsers from './pages/AdminUsers';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
@@ -27,6 +32,11 @@ export default function App() {
                         <Route path="/cart" element={<Cart user={user} />} />
                         <Route path="*" element={<NotFound />} />
                         <Route path="/orders" element={<UserOrders userId={user.id} closeLoginPopup={closeLoginPopup}/>} />
+                        <Route path="/admin" element={<Dashboard />} />
+                        <Route path="/admin/categories" element={<AdminCategories />} />
+                        <Route path="/admin/products" element={<AdminProducts />} />
+                        <Route path="/admin/orders" element={<AdminOrders />} />
+                        <Route path="/admin/users" element={<AdminUsers />} />
                     </Routes>
                 </main>
                 <Footer />

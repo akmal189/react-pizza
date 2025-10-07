@@ -25,7 +25,6 @@ export const CartProvider = ({ children }) => {
       const response = await fetch('/api/cart_action.php', {
         credentials: 'include' // Важно для передачи cookies с session_id
       });
-      console.log(await response)
       const data = await response.json();
       
       if (data.success) {

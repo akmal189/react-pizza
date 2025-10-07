@@ -41,9 +41,9 @@ export default function UserOrders({ userId, closeLoginPopup }) {
                             Заказ #{order.id}
                         </h2>
                         <span
-                            className={`px-3 py-1 rounded-full text-sm ${order.status === "completed"
+                            className={`px-3 py-1 rounded-full text-sm ${order.status === "Выполнен"
                                     ? "bg-green-100 text-green-700"
-                                    : order.status === "pending"
+                                    : order.status === "В обработке"
                                         ? "bg-yellow-100 text-yellow-700"
                                         : "bg-gray-200 text-gray-600"
                                 }`}
