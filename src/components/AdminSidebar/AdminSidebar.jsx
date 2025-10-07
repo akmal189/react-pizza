@@ -7,7 +7,7 @@ export default function AdminSidebar() {
                 <NavLink to="/admin" end 
                     className={({ isActive }) =>
                     `block ${isActive ? "text-primary-500 font-semibold" : "hover:text-primary-500"}`}
-                >Статистика</NavLink>
+                >Статистика </NavLink>
                 <NavLink to="/admin/orders" 
                     className={({ isActive }) =>
                     `block ${isActive ? "text-primary-500 font-semibold" : "hover:text-primary-500"}`}
